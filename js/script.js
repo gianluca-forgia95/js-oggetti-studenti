@@ -18,3 +18,41 @@ var student = {
 for (var property  in student ) {
  console.log(student[property]);
 }
+//Creo un array di oggetti studenti
+var students = [
+  {
+    nome: 'Gianluca',
+    cognome: 'Forgia',
+    eta: 25
+  },
+  {
+    nome: 'Andrea',
+    cognome: 'Bianchi',
+    eta: 20
+  },
+  {
+    nome: 'Franco',
+    cognome: 'Rossi',
+    eta: 28
+  },
+];
+//Ciclo l'array e stampo nomi e cognomi
+for (var i = 0; i < students.length; i++) {
+  console.log(students[i].nome + ' ' + students[i].cognome );
+
+}
+
+//Chiedo all' utente di aggiungere dei dati studente
+var nomePrompt = prompt('Inserisci il nome');
+var cognomePrompt = prompt('Inserisci il cognome');
+var etaPrompt = parseInt(prompt('Inserisci l eta'));
+//Creo l'oggetto nuovo studente
+var newStudent = {
+  nome: nomePrompt,
+  cognome: cognomePrompt,
+  eta: etaPrompt
+};
+
+for (var x in  newStudent ) {
+  console.log(newStudent[x]);
+}
