@@ -18,6 +18,8 @@ var student = {
 console.log("Stampo l'oggetto studente");
 for (var property  in student ) {
  console.log(property + ': ' + student[property]);
+ var stampHtml = $('.obj-studente');
+ stampHtml.append( property + ': '  + student[property] + ' ');
 }
 //Creo un array di oggetti studenti
 var students = [
@@ -65,4 +67,6 @@ students.push(newStudent);
 console.log('Qui stampo la lista studenti aggiornata');
 for (var i = 0; i < students.length; i++) {
   console.log(students[i].nome + ' ' + students[i].cognome + ' ' + students[i].eta);
+  var stampHtml = $('.students-list p');
+  stampHtml.append( students[i].nome + ' ' + students[i].cognome + ' ' + students[i].eta + ' ');
 }
