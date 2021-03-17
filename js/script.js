@@ -36,11 +36,14 @@ var students = [
     eta: 28
   },
 ];
+
+
 //Ciclo l'array e stampo nomi e cognomi
 for (var i = 0; i < students.length; i++) {
   console.log(students[i].nome + ' ' + students[i].cognome );
 
 }
+
 
 //Chiedo all' utente di aggiungere dei dati studente
 var nomePrompt = prompt('Inserisci il nome');
@@ -53,6 +56,10 @@ var newStudent = {
   eta: etaPrompt
 };
 
-for (var x in  newStudent ) {
-  console.log(newStudent[x]);
+//Metto nell'array studenti il nuovo oggetto studente
+students.push(newStudent);
+//console.log(students[i].nome + ' ' + students[i].cognome + ' ' + students[i].eta );
+//Lo stampo insieme agli altri studenti
+for (var i = 0; i < students.length; i++) {
+  console.log(students[i].nome + ' ' + students[i].cognome + ' ' + students[i].eta);
 }
