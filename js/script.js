@@ -8,3 +8,13 @@ studenti e stampare per ognuno nome e cognome
 aggiungere un nuovo oggetto studente inserendo
 nell’ordine: nome, cognome e età.
 */
+//Creo l'oggetto con le proprietà richieste
+var student = {
+  nome: 'Gianluca',
+  cognome: 'Forgia',
+  eta: 25,
+};
+//Definisco il ciclo for in per stamparlo
+for (var property  in student ) {
+ console.log(student[property]);
+}
