@@ -15,8 +15,9 @@ var student = {
   eta: 25,
 };
 //Definisco il ciclo for in per stamparlo
+console.log("Stampo l'oggetto studente");
 for (var property  in student ) {
- console.log(student[property]);
+ console.log(property + ': ' + student[property]);
 }
 //Creo un array di oggetti studenti
 var students = [
@@ -39,8 +40,9 @@ var students = [
 
 
 //Ciclo l'array e stampo nomi e cognomi
+console.log('Qui stampo nomi e cognomi');
 for (var i = 0; i < students.length; i++) {
-  console.log(students[i].nome + ' ' + students[i].cognome );
+  console.log( students[i].nome + ' ' + students[i].cognome );
 
 }
 
@@ -60,6 +62,7 @@ var newStudent = {
 students.push(newStudent);
 //console.log(students[i].nome + ' ' + students[i].cognome + ' ' + students[i].eta );
 //Lo stampo insieme agli altri studenti
+console.log('Qui stampo la lista studenti aggiornata');
 for (var i = 0; i < students.length; i++) {
   console.log(students[i].nome + ' ' + students[i].cognome + ' ' + students[i].eta);
 }
